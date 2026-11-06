@@ -6,3 +6,8 @@ app = FastAPI()
 @app.get("/home/{name}")
 def home(name: int):
     return {"this is home page"}
+
+
+@app.get("/home/{age}")
+def user_age(age: int):
+    return age

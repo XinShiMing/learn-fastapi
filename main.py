@@ -11,3 +11,8 @@ def home(name: int):
 @app.get("/home/{age}")
 def user_age(age: int):
     return age
+
+
+@app.get("/test/{page}")
+def next_page(page: int):
+    return page
